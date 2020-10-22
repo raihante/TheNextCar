@@ -1,0 +1,21 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="Car Safety | The Next Car" Height="450" Width="510">
+    <Grid>
+        <Button x:Name="StartButton" Content="STOPPED" HorizontalAlignment="Left" Margin="24,333,0,0" VerticalAlignment="Top" Width="75" Click="OnStartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" HorizontalAlignment="Left" Margin="162,333,0,0" VerticalAlignment="Top" Width="75" Click="OnDoorOpenButtonClicked"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" HorizontalAlignment="Left" Margin="298,333,0,0" VerticalAlignment="Top" Width="75" Click="OnLockDoorButtonClicked"/>
+        <Button x:Name="AccuButton" Content="OFF" HorizontalAlignment="Left" Margin="444,333,0,0" VerticalAlignment="Top" Width="38" Click="OnAccuButtonClicked"/>
+        <Label x:Name="status" Content="Engine Stopped" HorizontalAlignment="Left" Margin="20,374,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="DoorOpenState" Content="Door Is Open" HorizontalAlignment="Left" Margin="160,374,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LockDoorState" Content="Door Unlocked" HorizontalAlignment="Left" Margin="292,374,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="AccuState" Content="Power Off" HorizontalAlignment="Left" Margin="430,374,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="282" Margin="10,0,0,0" VerticalAlignment="Top" Width="474" Source="navigation.jpg"/>
+
+    </Grid>
+</Window>
